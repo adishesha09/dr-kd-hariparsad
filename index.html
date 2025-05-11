@@ -1,0 +1,1284 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Dr. KD Hariparsad (BDS) (WITS) | Dental Surgeon</title>
+  <meta name="description" content="Dental Surgeon in Newcastle with 23+ years experience. Specialising in cosmetic dentistry, implants, and paediatric care. Book your appointment today.">
+  <meta name="keywords" content="dentist newcastle, dental implants, teeth whitening, root canal treatment, paediatric dentist, cosmetic dentistry south africa">
+  <link rel="canonical" href="https://drkdhariparsad.co.za" />
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Dr. KD Hariparsad - Dentist in Newcastle">
+  <meta property="og:description" content="Dental care for the whole family. Book your smile transformation today.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://drkdhariparsad.co.za">
+  <meta property="og:image" content="https://drkdhariparsad.co.za/dr_hariparsad-social.png">
+  <meta property="og:site_name" content="Dr. KD Hariparsad Dental Practice">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dr. KD Hariparsad - Dentist in Newcastle">
+  <meta name="twitter:description" content="Dental care for the whole family.">
+  <meta name="twitter:image" content="https://drkdhariparsad.co.za/dr_hariparsad-social.png">
+  
+  <link rel="icon" href="dental.ico" type="image/x-icon">
+
+  
+
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://kit.fontawesome.com">
+  <link rel="preconnect" href="https://unpkg.com">
+  <!-- Preload hero image -->
+  <link rel="preload" href="hero_image.jpeg" as="image">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap"></noscript>
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/50723fee09.js" crossorigin="anonymous"></script>
+
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --berry-pink: #b31f6b;
+      --sky-blue: #00b2cc;
+      --golden-yellow: #ffc400;
+      --white: #ffffff;
+      --light-grey: #f5f5f5;
+      --dark-grey: #333333;
+      --gradient: linear-gradient(135deg, var(--berry-pink) 0%, var(--sky-blue) 100%);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--white);
+      color: var(--dark-grey);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 255);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      padding: 1rem 2rem;
+      transition: all 0.3s ease;
+    }
+
+    nav.scrolled {
+      padding: 0.5rem 2rem;
+      background: rgba(255, 255, 255, 0.98);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 50px;
+      width: auto;
+      margin-right: 1rem;
+    }
+
+    .logo-text h1 {
+      font-size: 1.2rem;
+      margin: 0;
+      color: var(--berry-pink);
+      font-family: 'Playfair Display', serif;
+    }
+
+    .logo-text h2 {
+      font-size: 0.7rem;
+      margin: 0;
+      color: var(--dark-grey);
+      font-weight: 400;
+    }
+
+    .nav-links {
+      display: flex;
+      transition: all 0.3s ease;
+    }
+
+    .nav-links a {
+      color: var(--dark-grey);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: color 0.3s;
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: var(--berry-pink);
+    }
+
+    .nav-links a:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background: var(--berry-pink);
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s;
+    }
+
+    .nav-links a:hover:after {
+      width: 100%;
+    }
+
+    /* Mobile Menu */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--berry-pink);
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 1001;
+    }
+
+    .btn-primary {
+      background: var(--gradient);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(179, 31, 107, 0.3);
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(179, 31, 107, 0.4);
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      background: url('hero_image.jpeg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      margin-top: 80px;
+    }
+
+    .hero:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: white;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 3.5rem);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      font-size: clamp(1.1rem, 2vw, 1.3rem);
+      max-width: 600px;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    /* Services Section */
+    .services {
+      padding: 6rem 1rem;
+      text-align: center;
+      background: var(--light-grey);
+    }
+
+    .services h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      color: var(--berry-pink);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .services .subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--dark-grey);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .service-columns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .service-column {
+      flex: 1 1 300px;
+      max-width: 350px;
+      text-align: left;
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service-column:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-column h3 {
+      color: var(--sky-blue);
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .service-column h3:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: var(--golden-yellow);
+      bottom: 0;
+      left: 0;
+    }
+
+    .service-item {
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .icon-circle {
+      background: var(--gradient);
+      color: var(--white);
+      border-radius: 50%;
+      padding: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      min-width: 50px;
+      min-height: 50px;
+      flex-shrink: 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-text {
+      flex: 1;
+    }
+
+    .service-text strong {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      color: var(--berry-pink);
+    }
+
+    /* About Section */
+    .about {
+      padding: 6rem 1rem;
+      text-align: center;
+      background: white;
+    }
+
+    .about h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      color: var(--berry-pink);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .about .subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--dark-grey);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: left;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1 1 500px;
+      max-width: 600px;
+    }
+
+    .doctor-image {
+      flex: 1 1 400px;
+      max-width: 400px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .doctor-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .doctor-image:hover img {
+      transform: scale(1.03);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .about-content {
+        flex-direction: column;
+      }
+    
+      .doctor-image {
+        order: -1;
+        max-width: 350px;
+      }
+    } 
+
+    .about-text p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+      text-align: left;
+      hyphens: none;
+      word-break: normal;
+      overflow-wrap: break-word;
+      word-spacing: normal;
+    } 
+
+    .keep-together {
+      white-space: nowrap;
+    }
+
+    .team {
+      flex: 1 1 300px;
+      max-width: 400px;
+      background: var(--light-grey);
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    .team h3 {
+      color: var(--sky-blue);
+      margin-bottom: 1.5rem;
+      font-family: 'Playfair Display', serif;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .team h3:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: var(--golden-yellow);
+      bottom: 0;
+      left: 0;
+    }
+
+    .team-member {
+      margin-bottom: 1.5rem;
+    }
+
+    .team-member strong {
+      color: var(--berry-pink);
+      display: block;
+      margin-bottom: 0.3rem;
+    }
+
+    /* Contact Section */
+    .contact {
+      text-align: center;
+      background: var(--gradient);
+      padding: 6rem 1rem;
+      color: white;
+    }
+
+    .contact h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .contact .subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact-buttons a {
+      margin: 0;
+      display: inline-flex;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background: white;
+      color: var(--berry-pink);
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-weight: 600;
+      min-width: 48px;
+      min-height: 48px;
+      justify-content: center;
+    }
+
+    .contact-buttons a i {
+      margin-right: 8px;
+      font-size: 1.2rem;
+    }
+
+    .contact-buttons a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: var(--dark-grey);
+      color: var(--white);
+    }
+
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .footer-logo img {
+      height: 60px;
+      width: auto;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer-links a {
+      color: var(--white);
+      text-decoration: none;
+      transition: color 0.3s;
+      padding: 0.5rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--golden-yellow);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .social-links a {
+      color: var(--white);
+      font-size: 1.2rem;
+      transition: color 0.3s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .social-links a:hover {
+      color: var(--golden-yellow);
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .follow-text {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin-left: -0.5rem;
+    }
+
+    .copyright {
+      width: 100%;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .powered-by {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 0.5rem;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .powered-by a {
+      color: rgba(255, 255, 255, 0.7);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .powered-by a:hover {
+      color: var(--golden-yellow);
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .delay-1 {
+      animation-delay: 0.2s;
+    }
+
+    .delay-2 {
+      animation-delay: 0.4s;
+    }
+
+    .delay-3 {
+      animation-delay: 0.6s;
+    }
+
+    /* Facebook Blog Section */
+    .facebook-blog {
+      padding: 6rem 1rem;
+      text-align: center;
+      background: var(--light-grey);
+    }
+    
+    .facebook-blog h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      color: var(--berry-pink);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .facebook-blog .subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--dark-grey);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .facebook-content {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      text-align: left;
+    }
+    
+    .facebook-text {
+      flex: 1 1 500px;
+    }
+    
+    .facebook-text ul {
+      margin: 1.5rem 0;
+      padding-left: 1.5rem;
+    }
+    
+    .facebook-text li {
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+    }
+    
+    .facebook-button {
+      flex: 1 1 300px;
+      text-align: center;
+    }
+    
+    @media (max-width: 768px) {
+      .facebook-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .facebook-text ul {
+        text-align: left;
+      }
+    }
+
+    /* Location Section */
+    .location {
+      padding: 6rem 1rem;
+      background: var(--white);
+      text-align: center;
+    }
+    
+    .location h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      color: var(--berry-pink);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+    
+    .location .subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--dark-gray);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .location-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3rem;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    
+    .location-info {
+      flex: 1 1 400px;
+      max-width: 500px;
+    }
+    
+    .location-info h3 {
+      color: var(--sky-blue);
+      font-family: 'Playfair Display', serif;
+      margin-top: 2rem;
+      position: relative;
+      padding-bottom: 10px;
+    }
+    
+    .location-info h3:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: var(--golden-yellow);
+      bottom: 0;
+      left: 0;
+    }
+    
+    .location-info p {
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+    
+    .location-info strong {
+      color: var(--berry-pink);
+    }
+    
+    .location-map {
+      flex: 1 1 600px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      min-height: 400px;
+    }
+    
+    .location-buttons {
+      margin-top: 2rem;
+    }
+    
+    /* Tablet-specific styles */
+    @media (min-width: 600px) and (max-width: 900px) {
+      .service-columns {
+        gap: 1.5rem;
+      }
+      
+      .service-column {
+        flex: 1 1 calc(50% - 1rem);
+      }
+      
+      .about-content {
+        gap: 2rem;
+      }
+      
+      .location-content {
+        gap: 2rem;
+      }
+    }
+
+    /* Mobile-specific styles */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+      }
+      
+      .nav-links {
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.98);
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        transform: translateY(-150%);
+        opacity: 0;
+      }
+      
+      .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      
+      .nav-links a {
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+      }
+      
+      .service-column {
+        flex: 1 1 100%;
+      }
+      
+      .footer-content {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .powered-by {
+        font-size: 0.8rem;
+        opacity: 0.7;
+        margin-top: 0.5rem;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      .follow-text {
+        display: block;
+        margin: 0.5rem 0 0;
+        width: 100%;
+      }
+      
+      .location-map {
+        min-height: 300px;
+      }
+    }
+
+    /* Small mobile devices */
+    @media (max-width: 480px) {
+      .keep-together {
+        white-space: normal; 
+      }
+      
+      .about-text p {
+        line-height: 1.7;
+      }
+      
+      .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .contact-buttons a {
+        width: 100%;
+        max-width: 250px;
+      }
+      
+      .hero {
+        margin-top: 60px;
+      }
+    }
+    
+    /* Large desktop screens */
+    @media (min-width: 1600px) {
+      .nav-container, .hero-content, .service-columns, 
+      .about-content, .location-content, .footer-content {
+        max-width: 1400px;
+      }
+    }
+
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DentalClinic",
+    "name": "Dr. KD Hariparsad Dental Practice",
+    "image": "https://yourdentalpractice.com/dr_hariparsad.jpg",
+    "@id": "https://drkdhariparsad.co.za",
+    "url": "https://drkdhariparsad.co.za",
+    "telephone": "+27343121690",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Suite 1, 1st Floor, Absa Block, 2 Whyte Street",
+      "addressLocality": "Newcastle",
+      "addressRegion": "KwaZulu-Natal",
+      "postalCode": "2940",
+      "addressCountry": "ZA"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "-27.758399",
+      "longitude": "29.931234"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "16:30"
+    },
+    "priceRange": "$$",
+    "sameAs": [
+      "https://www.facebook.com/profile.php?id=100057334223547"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="dental_logo.jpg" alt="Dr KD Hariparsad Logo" width="50" height="50">
+        <div class="logo-text">
+          <h1>DR KD HARIPARSAD</h1>
+          <h2>DENTAL SURGEON (BDS) (WITS)</h2>
+        </div>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#facebook-blog">Insights</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1 class="fade-in">Your Smile Deserves the Best Care</h1>
+      <p class="fade-in delay-1">We combine advanced dental technology with compassionate care to give you a healthy, beautiful smile.</p>
+      <a href="tel:27343121690" class="btn-primary fade-in delay-2" target="_self">
+        Book Your Appointment Today
+      </a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services" data-aos="fade-up">
+    <h2>Your Smile, Our Care</h2>
+    <p class="subtitle">Comprehensive dental services tailored to your unique requirements and comfort.</p>
+    
+    <div class="service-columns">
+      <div class="service-column" data-aos="fade-up" data-aos-delay="100">
+        <h3>General Dentistry</h3>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-stethoscope"></i></div>
+          <div class="service-text">
+            <strong>Dental Check-Up</strong>
+            Routine exams to detect and prevent dental problems early.
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-tooth"></i></div>
+          <div class="service-text">
+            <strong>Scaling and Polishing</strong>
+            Professional cleaning to remove plaque, stains, and promote gum health.
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-band-aid"></i></div>
+          <div class="service-text">
+            <strong>Fillings</strong>
+            Repairing cavities and restoring your teeth's structure and function.
+          </div>
+        </div>
+      </div>
+
+      <div class="service-column" data-aos="fade-up" data-aos-delay="200">
+        <h3>Cosmetic Dentistry</h3>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-smile"></i></div>
+          <div class="service-text">
+            <strong>Teeth Whitening</strong>
+            Brighten your smile with safe and effective whitening treatments.
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-teeth-open"></i></div>
+          <div class="service-text">
+            <strong>Crowns, Bridges, and Implants</strong>
+            Restoring damaged or missing teeth with natural-looking solutions.
+          </div>
+        </div>
+      </div>
+
+      <div class="service-column" data-aos="fade-up" data-aos-delay="300">
+        <h3>Specialised Treatments</h3>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-syringe"></i></div>
+          <div class="service-text">
+            <strong>Root Canals</strong>
+            Treating infection inside the tooth to relieve the pain.
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-teeth"></i></div>
+          <div class="service-text">
+            <strong>Dentures</strong>
+            Custom-made prosthetics to replace missing teeth and restore function.
+          </div>
+        </div>
+
+        <div class="service-item">
+          <div class="icon-circle"><i class="fas fa-child"></i></div>
+          <div class="service-text">
+            <strong>Paediatric Dentistry</strong>
+            Gentle care for children to ensure healthy smiles from an early age.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about" data-aos="fade-up">
+    <h2>About Our Practice</h2>
+    <p class="subtitle">Dedicated to excellence in dental care for over two decades</p>
+    
+    <div class="about-content">
+      <div class="about-text">
+        <p><span class="keep-together">Dr. KD Hariparsad</span> is an alumnus of the <span class="keep-together">University of Witwatersrand</span>, having graduated with her <span class="keep-together">Bachelor of Dental Surgery (BDS)</span> in 2002. With over <span class="keep-together">23 years of experience</span> in the dental field, she brings a wealth of knowledge and expertise to her practice.</p>
+        
+        <p>A three-time winner at the prestigious <span class="keep-together">Best of Newcastle Awards</span>, Dr. Hariparsad has been consistently recognised for her exceptional dental care and patient satisfaction. Passionate about her craft, she stays at the forefront of dental advancements through <span class="keep-together">continuous education</span> and training. Her commitment to patient care is evident in her <span class="keep-together">gentle approach</span> and attention to detail, ensuring each patient receives <span class="keep-together">personalised treatment</span> tailored to their needs.</p>
+        
+        <p>Our practice philosophy centers on providing <span class="keep-together">comprehensive dental care</span> in a comfortable environment, where <span class="keep-together">patient education</span> and <span class="keep-together">preventive care</span> are prioritised alongside <span class="keep-together">exceptional treatment outcomes</span>.</p>
+      </div>
+
+      <div class="doctor-image" data-aos="fade-left">
+        <img src="dr_hariparsad.jpg" 
+             alt="Dr. KD Hariparsad, Dental Surgeon"
+             loading="lazy"
+             width="400"
+             height="500">
+      </div>
+      
+      <div class="team">
+        <h3>Meet Our Team</h3>
+        
+        <div class="team-member">
+          <strong>Dr. KD Hariparsad</strong>
+          Principal Dental Surgeon
+        </div>
+        
+        <div class="team-member">
+          <strong>Annelisha Mathadeen</strong>
+          Dental Assistant
+        </div>
+        
+        <div class="team-member">
+          <strong>Uritha Buduram</strong>
+          Account Handling and Queries
+        </div>
+        
+        <div class="team-member">
+          <strong>Karishma Boodhoo</strong>
+          Receptionist 
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facebook Blog Section -->
+  <section class="facebook-blog" id = "facebook-blog" data-aos="fade-up">
+    <div class="facebook-container">
+      <h2>Dental Insights & Updates</h2>
+      <p class="subtitle">Follow Dr. Hariparsad's Facebook page for case studies, dental tips, and service updates</p>
+      
+      <div class="facebook-content">
+        <div class="facebook-text">
+          <p>Dr. Hariparsad regularly shares educational content on her Facebook page, including:</p>
+          <ul>
+            <li>Intriguing case studies with before and after results</li>
+            <li>Updates on new services</li>
+            <li>Oral health tips and preventive care advice</li>
+            <li>Practice news and community involvement</li>
+          </ul>
+          <p>Connect with us to stay informed about dental health and our practice.</p>
+        </div>
+        
+        <div class="facebook-button">
+          <a href="https://www.facebook.com/profile.php?id=100057334223547" class="btn-primary" target="_self">
+            <i class="fab fa-facebook-f"></i> Visit Our Facebook Page
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Location Section -->
+  <section class="location" id="location" data-aos="fade-up">
+    <div class="location-container">
+      <h2>Our Location</h2>
+      <p class="subtitle">Visit our conveniently located practice in Newcastle</p>
+      
+      <div class="location-content">
+        <div class="location-info">
+          <h3>Practice Address</h3>
+          <p>SUITE 1, 1ST FLOOR, ABSA BLOCK<br>
+          2 WHYTE STREET<br>
+          NEWCASTLE, 2940</p>
+          
+          <h3>Operating Hours</h3>
+          <p><strong>Monday - Friday:</strong> 8:00 AM - 16:30 PM<br>
+          <strong>Alternate Saturdays:</strong> 8:00 AM - 11:00 PM<br>
+          <strong>Sunday:</strong> Closed</p>
+          
+          <div class="location-buttons">
+            <a href="https://maps.app.goo.gl/pbLtU9xLyCWNFKWu7" class="btn-primary" target="_self">
+              <i class="fas fa-map-marker-alt"></i> Get Directions
+            </a>
+          </div>
+        </div>
+        
+        <div class="location-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3478.123456789012!2d29.93123456789012!3d-27.76543210987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQ1JzU1LjYiUyAyOcKwNTUnNTguNiJF!5e0!3m2!1sen!2sza!4v1234567890123!5m2!1sen!2sza" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Practice Location Map">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact" data-aos="fade-up">
+    <h2>Ready for Your Perfect Smile?</h2>
+    <p class="subtitle">Contact us today to schedule your appointment or ask any questions.</p>
+    
+    <div class="contact-buttons">
+      <a href="https://wa.me/+27747113339" target="_self"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="tel:+27343121690"><i class="fas fa-phone"></i> Call Us</a>
+      <a href="mailto:drkdhariparsad@gmail.com"><i class="fas fa-envelope"></i> Email Us</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#facebook-blog">Insights</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </div>
+        
+      <div class="copyright">
+  &copy; 2025 Dr KD Hariparsad | All Rights Reserved<br>
+  <span class="powered-by">Powered by <a href="https://adishesha09.github.io/spectra-studios/" target="_blank" style="color: inherit; text-decoration: none;">Spectra Studios</a></span>
+</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animation library
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true
+    });
+    
+    // Sticky navbar on scroll
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      menuToggle.innerHTML = navLinks.classList.contains('active') ? 
+        '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close mobile menu when clicking a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+      });
+    });
+
+    // Load Google Maps iframe only when visible
+    const locationSection = document.querySelector('.location');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const iframe = entry.target.querySelector('iframe');
+          if (iframe && !iframe.src) {
+            iframe.src = iframe.getAttribute('data-src');
+            iframe.removeAttribute('data-src');
+          }
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (locationSection) {
+      observer.observe(locationSection);
+    }
+  </script>
+
+  <script>
+    document.querySelectorAll('a[href^="http"]').forEach(link => {
+      if (!link.href.includes(window.location.host)) {
+        link.addEventListener('click', (e) => {
+          gtag('event', 'outbound_click', {
+            'event_category': 'Outbound',
+            'event_label': link.href
+          });
+        });
+      }
+    });
+  </script>
+</body>
+</html>

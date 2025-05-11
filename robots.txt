@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://drkdhariparsad.co.za/sitemap.xml
