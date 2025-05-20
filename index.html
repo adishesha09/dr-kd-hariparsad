@@ -328,6 +328,124 @@
       color: var(--berry-pink);
     }
 
+    /* FAQ Section */
+    .faq {
+      background: var(--light-grey);
+      padding: 6rem 1rem;
+      text-align: center;
+    }
+
+    .faq h2 {
+      font-size: clamp(2rem, 4vw, 2.5rem);
+      color: var(--berry-pink);
+      margin-bottom: 1rem;
+      font-family: 'Playfair Display', serif;
+    }
+
+    .faq .subtitle {
+      font-size: clamp(1rem, 2vw, 1.2rem);
+      color: var(--dark-grey);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+      background: white;
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-item h3 {
+      margin-bottom: 0.8rem;
+      color: var(--sky-blue);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .faq-item h3:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 3px;
+      background: var(--golden-yellow);
+      bottom: 0;
+      left: 0;
+    }
+
+    .faq-item p {
+      color: var(--dark-grey);
+      line-height: 1.7;
+    }
+
+    .faq-item ul {
+      margin: 1rem 0 1rem 1.5rem;
+      padding-left: 1rem;
+    }
+
+    .faq-item li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .faq-item a {
+      color: var(--berry-pink);
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .faq-item a:hover {
+      color: var(--sky-blue);
+      text-decoration: underline;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .faq {
+        padding: 4rem 1rem;
+      }
+      
+      .faq-item {
+        padding: 1.25rem 1.5rem;
+      }
+      
+      .faq-item h3 {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .faq-item {
+        padding: 1rem 1.25rem;
+      }
+      
+      .faq-item h3 {
+        font-size: 1.1rem;
+      }
+      
+      .faq-item p, .faq-item li {
+        font-size: 0.95rem;
+      }
+    }
+
     /* About Section */
     .about {
       padding: 6rem 1rem;
@@ -950,6 +1068,7 @@
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#facebook-blog">Insights</a>
+        <a href="#faq">FAQs</a>
         <a href="#location">Location</a>
         <a href="#contact">Contact</a>
       </div>
@@ -1074,27 +1193,35 @@
       </div>
       
       <div class="team">
-        <h3>Meet Our Team</h3>
-        
-        <div class="team-member">
-          <strong>Dr. KD Hariparsad</strong>
-          Principal Dental Surgeon
-        </div>
-        
-        <div class="team-member">
-          <strong>Annelisha Mathadeen</strong>
-          Dental Assistant
-        </div>
-        
-        <div class="team-member">
-          <strong>Uritha Buduram</strong>
-          Account Handling and Queries
-        </div>
-        
-        <div class="team-member">
-          <strong>Karishma Boodhoo</strong>
-          Receptionist 
-        </div>
+      <h3>Meet Our Team</h3>
+      
+      <div class="team-member">
+        <strong>Dr. KD Hariparsad</strong>
+        Principal Dental Surgeon
+      </div>
+      
+      <div class="team-member">
+        <strong>Annelisha Mathadeen</strong>
+        Dental Assistant
+      </div>
+      
+      <div class="team-member">
+        <strong>Uritha Buduram</strong>
+        Account Handling and Queries
+      </div>
+      
+      <div class="team-member">
+        <strong>Karishma Boodhoo</strong>
+        Receptionist 
+      </div>
+
+      <div style="margin-top: 2rem; text-align: center;">
+        <a href="https://www.bestofsouthafrica.co.za/newcastle/best-of-newcastle-nomination/" 
+          class="btn-primary" 
+          target="_blank"
+          style="display: inline-block; margin-top: 1rem;">
+          <i class="fas fa-award"></i> Nominate Us for Best of Newcastle 2025
+        </a>
       </div>
     </div>
   </section>
@@ -1126,6 +1253,54 @@
     </div>
   </section>
 
+   <!-- FAQ Section -->
+  <section class="faq" id="faq" data-aos="fade-up">
+    <div class="faq-container">
+      <h2>Frequently Asked Questions</h2>
+      <p class="subtitle">Answers to some of the most common questions our patients ask.</p>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>Do you accept medical aid?</h3>
+          <p>Yes, Dr. Hariparsad accepts cash and most major South African medical aids including Discovery, Bonitas, Momentum, and others. Please contact us to verify your specific medical aid coverage.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How often should I visit the dentist?</h3>
+          <p>We recommend visiting the dentist every 6 months for a routine check-up and cleaning. However, some patients may need more frequent visits based on their individual oral health needs.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>What should I do in a dental emergency?</h3>
+          <p>For dental emergencies (severe pain, knocked-out tooth, swelling, or trauma), please call us immediately at <a href="tel:+27343121690">034 312 1690</a> or WhatsApp <a href="https://wa.me/+27747113339">074 711 3339</a>. We prioritise emergency cases and will do our best to see you as soon as possible.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How can I overcome dental anxiety?</h3>
+          <p>We specialise in gentle dentistry for anxious patients. Options include:
+            <ul>
+              <li>Thorough explanation of procedures to reduce fear of the unknown</li>
+              <li>Taking breaks during treatment when needed</li>
+              <li>Using the most comfortable techniques available</li>
+              <li>Sedation options for extremely anxious patients</li>
+            </ul>
+            Let us know about your concerns so we can tailor your experience.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>How can I book an appointment?</h3>
+          <p>You can call us directly, send a WhatsApp, or email using the contact options on this website.</p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Do you treat children?</h3>
+          <p>Absolutely. We provide gentle and professional dental care for children of all ages.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- Location Section -->
   <section class="location" id="location" data-aos="fade-up">
@@ -1142,7 +1317,7 @@
           
           <h3>Operating Hours</h3>
           <p><strong>Monday - Friday:</strong> 8:00 AM - 16:30 PM<br>
-          <strong>Alternate Saturdays:</strong> 8:00 AM - 11:00 PM<br>
+          <strong>Alternate Saturdays:</strong> 8:00 AM - 11:00 AM<br>
           <strong>Sunday:</strong> Closed</p>
           
           <div class="location-buttons">
@@ -1188,6 +1363,7 @@
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#facebook-blog">Insights</a>
+        <a href="#faq">FAQs</a>
         <a href="#location">Location</a>
         <a href="#contact">Contact</a>
       </div>
