@@ -25,7 +25,7 @@ Professional website for Dr. KD Hariparsad's dental practice in Newcastle, South
 2. **Services**: Detailed showcase of dental services in three categories
 3. **About**: Practice information and team bios
 4. **Facebook Integration**: Connection to practice's social media
-5. **FAQ Section** FAQ section for common patient questions
+5. **FAQ Section**: FAQ section for common patient questions
 6. **Location**: Interactive map and practice hours
 7. **Contact**: Multiple contact options (phone, email, WhatsApp)
 
