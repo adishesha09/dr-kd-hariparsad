@@ -101,5 +101,8 @@ Professional website for Dr. KD Hariparsad's dental practice in Newcastle, South
 - ARIA attributes where needed
 - Reduced motion options
 
+## Credits
+Website developed by [Spectra Studios](https://spectrastudios.co.za)
+
 ## License
 This website is the property of Dr. KD Hariparsad and Spectra Studios. All content is copyrighted.
