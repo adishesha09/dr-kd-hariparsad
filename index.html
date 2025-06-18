@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,7 +23,7 @@
   <meta name="twitter:description" content="Dental care for the whole family.">
   <meta name="twitter:image" content="https://drkdhariparsad.co.za/dr_hariparsad-social.png">
 
-  <link rel="icon" href="dental.ico" type="image/x-icon">
+  <link rel="icon" href="favicon_new.ico" type="image/x-icon">
 
   <!-- Sitemap -->
   <link rel="sitemap" type="application/xml" href="https://drkdhariparsad.co.za/sitemap.xml" title="Sitemap">
@@ -170,6 +171,29 @@
       margin: 0 auto;
     }
 
+    @media (max-width: 1024px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem 0;
+      }
+
+      .nav-links a {
+        margin: 0.5rem 0;
+        padding: 0.5rem 1rem;
+      }
+    }
+
+    @media (max-width: 1024px) and (min-width: 768px) {
+      .nav-links a {
+        font-size: 0.95rem;
+      }
+    }
+
     .logo {
       display: flex;
       align-items: center;
@@ -197,6 +221,9 @@
 
     .nav-links {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
       transition: all 0.3s ease;
     }
 
