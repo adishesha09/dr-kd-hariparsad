@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -923,6 +922,24 @@
     }
 
     @media (max-width: 768px) {
+      .facebook-blog {
+        padding-bottom: 0rem;
+        /* reduce from 6rem */
+      }
+
+      .facebook-content {
+        gap: 1.5rem;
+        /* reduce gap between elements */
+      }
+
+      .facebook-button {
+        margin-bottom: 0;
+        /* ensure no extra margin */
+      }
+    }
+
+
+    @media (max-width: 768px) {
       .facebook-content {
         flex-direction: column;
         text-align: center;
@@ -932,6 +949,30 @@
         text-align: left;
       }
     }
+
+    /* Tighter spacing between Facebook and FAQ sections on mobile */
+    @media (max-width: 768px) {
+      .facebook-blog {
+        padding-top: 2rem;
+        padding-bottom: 0rem;
+      }
+
+      .facebook-content {
+        gap: 1rem;
+        margin-bottom: 0;
+      }
+
+      .facebook-button {
+        margin-bottom: 0;
+      }
+
+      .faq {
+        padding-top: 2rem;
+      }
+    }
+
+
+
 
     /* Location Section */
     .location {
