@@ -2,37 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://drkdhariparsad.co.za/</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-07-18</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://drkdhariparsad.co.za/#services</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-07-18</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://drkdhariparsad.co.za/#about</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-07-18</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://drkdhariparsad.co.za/#anniversary</loc>
+    <lastmod>2025-07-18</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://drkdhariparsad.co.za/#facebook-blog</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-07-18</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://drkdhariparsad.co.za/#faq</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-07-18</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://drkdhariparsad.co.za/#location</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-07-18</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://drkdhariparsad.co.za/#contact</loc>
-    <lastmod>2025-06-18</lastmod>
+    <lastmod>2025-07-18</lastmod>
     <priority>0.80</priority>
   </url>
 </urlset>
