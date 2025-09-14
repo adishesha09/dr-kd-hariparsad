@@ -1,6 +1,6 @@
 # Dr. KD Hariparsad Dental Practice Website
 
-![Website Screenshot](hero_image.jpeg)
+![Website Screenshot](assets/imgs/hero_image.jpeg)
 
 Professional website for Dr. KD Hariparsad's dental practice in Newcastle, South Africa. This responsive website showcases services, practice information, and contact details to help patients connect with the practice.
 
