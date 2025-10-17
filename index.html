@@ -515,7 +515,7 @@
       .fullscreen-menu a {
         font-size: 1.5rem;
       }
-      
+
       .menu-contact-info p {
         font-size: 1rem;
       }
@@ -1357,6 +1357,58 @@
         max-width: 1400px;
       }
     }
+
+    @media (min-width: 1025px) {
+      .menu-toggle {
+        display: none !important;
+      }
+
+      .nav-links {
+        display: flex !important;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+      }
+    }
+
+    /* Mobile Navigation - Show hamburger, hide regular menu */
+    @media (max-width: 1024px) {
+      .menu-toggle {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* Fix header overlap for anchor links */
+    section {
+      scroll-margin-top: 100px;
+    }
+
+    /* Prevent scrolling when menu is open */
+    body.menu-open {
+      overflow: hidden;
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Ensure fullscreen menu is fixed and covers entire screen */
+    .fullscreen-menu {
+      position: fixed !important;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Remove contact info from dropdown */
+    .menu-contact-info {
+      display: none;
+    }
   </style>
 </head>
 
@@ -1391,6 +1443,20 @@
           <h2>DENTAL SURGEON (BDS) (WITS)</h2>
         </div>
       </div>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#anniversary">Anniversary</a>
+        <a href="#facebook-blog">Insights</a>
+        <a href="#faq">FAQs</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <!-- Mobile Hamburger Menu -->
       <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
         <span></span>
         <span></span>
@@ -1411,12 +1477,6 @@
       <li><a href="#location">Location</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    
-    <div class="menu-contact-info">
-      <p><a href="tel:+27343121690">+27 34 312 1690</a></p>
-      <p><a href="https://wa.me/+27747113339">WhatsApp: +27 74 711 3339</a></p>
-      <p><a href="mailto:drkdhariparsad@gmail.com">drkdhariparsad@gmail.com</a></p>
-    </div>
   </div>
 
   <!-- Hero Section -->
@@ -1801,14 +1861,19 @@
       }
     });
 
-    // Fullscreen hamburger menu functionality
     const menuToggle = document.getElementById('menuToggle');
     const fullscreenMenu = document.getElementById('fullscreenMenu');
 
     menuToggle.addEventListener('click', () => {
       menuToggle.classList.toggle('active');
       fullscreenMenu.classList.toggle('active');
-      document.body.style.overflow = fullscreenMenu.classList.contains('active') ? 'hidden' : '';
+
+      // Prevent body scrolling when menu is open
+      if (fullscreenMenu.classList.contains('active')) {
+        document.body.classList.add('menu-open');
+      } else {
+        document.body.classList.remove('menu-open');
+      }
     });
 
     // Close menu when clicking a link
@@ -1816,18 +1881,27 @@
       link.addEventListener('click', () => {
         menuToggle.classList.remove('active');
         fullscreenMenu.classList.remove('active');
-        document.body.style.overflow = '';
+        document.body.classList.remove('menu-open');
       });
     });
 
-    // Smooth scrolling for anchor links
+    // Smooth scrolling for anchor links with header offset
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+
+        if (targetElement) {
+          const headerHeight = document.getElementById('navbar').offsetHeight;
+          const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
       });
     });
 
@@ -1864,7 +1938,6 @@
     });
   </script>
   <script>
-    // Guaranteed Loading Experience - Minimum 5.5s, Max 7s
     document.addEventListener('DOMContentLoaded', function () {
       'use strict';
 
