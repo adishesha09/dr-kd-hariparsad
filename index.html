@@ -1409,6 +1409,47 @@
     .menu-contact-info {
       display: none;
     }
+
+    .nav-links a {
+      position: relative;
+      color: var(--dark-grey);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      transition: color 0.3s ease;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    /* Underline animation */
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background: var(--berry-pink);
+      transition: width 0.3s ease;
+    }
+
+    /* On hover, slide underline in */
+    .nav-links a:hover {
+      color: var(--berry-pink);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    /* Active link keeps the underline */
+    .nav-links a.active {
+      color: var(--berry-pink);
+    }
+
+    .nav-links a.active::after {
+      width: 100%;
+      background: var(--golden-yellow);
+    }
   </style>
 </head>
 
@@ -2051,6 +2092,42 @@
       });
     });
   </script>
+  <script>
+    // Highlight active section in navbar
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-links a");
+
+      function activateNavLink() {
+        let scrollY = window.pageYOffset + 120; // offset for sticky header
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.offsetHeight;
+          const sectionId = section.getAttribute("id");
+
+          const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+          if (!navLink) return;
+
+          if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+            navLinks.forEach(link => link.classList.remove("active"));
+            navLink.classList.add("active");
+          }
+        });
+      }
+
+      window.addEventListener("scroll", activateNavLink);
+
+      // Also handle click highlighting for immediate feedback
+      navLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navLinks.forEach(l => l.classList.remove("active"));
+          link.classList.add("active");
+        });
+      });
+    });
+  </script>
+
 </body>
 
 </html>
